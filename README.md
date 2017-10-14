@@ -20,7 +20,7 @@ NativeScript Core
 
 ```js
 
-const MDTPicker = require("nativescript-material-datetimepicker").MaterialDatetimepicker();
+const MDTPicker = require("nativescript-material-datetimepicker").MaterialDatetimepicker;
 
 const mDtpicker = new MDTPicker();
 
