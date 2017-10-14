@@ -5,7 +5,6 @@ It is not compatible with iOS yet.
 
 ## Installation
 
-(Plugin not published yet. Plugin is under development)
 ```javascript
 tns plugin add nativescript-material-datetimepicker
 ```
