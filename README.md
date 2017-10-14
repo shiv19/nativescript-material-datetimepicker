@@ -1,39 +1,69 @@
-# Your Plugin Name
+# nativescript-material-datetimepicker
 
-Add your plugin badges here. See [nativescript-urlhandler](https://github.com/hypery2k/nativescript-urlhandler) for example.
-
-Then describe what's the purpose of your plugin. 
-
-In case you develop UI plugin, this is where you can add some screenshots.
-
-## (Optional) Prerequisites / Requirements
-
-Describe the prerequisites that the user need to have installed before using your plugin. See [nativescript-firebase plugin](https://github.com/eddyverbruggen/nativescript-plugin-firebase) for example.
+This plugin is a wrapper around `android.app.DatePickerDialog` for Android.
+It is not compatible with iOS yet.
 
 ## Installation
 
-Describe your plugin installation steps. Ideally it would be something like:
-
+(Plugin not published yet. Plugin is under development)
 ```javascript
-tns plugin add <your-plugin-name>
+tns plugin add nativescript-material-datetimepicker
 ```
 
 ## Usage 
 
-Describe any usage specifics for your plugin. Give examples for Android, iOS, Angular if needed. See [nativescript-drop-down](https://www.npmjs.com/package/nativescript-drop-down) for example.
-	
-	```javascript
-    Usage code snippets here
-    ```)
+NativeScript Core
+
+```js
+
+ const MDTPicker = require("nativescript-material-datetimepicker").MaterialDatetimepicker();
+
+ const mDtpicker = new MDTPicker();
+
+ // Pick Date
+ exports.selectDate = function() {
+    mDtpicker.pickDate()
+      .then((result) => {
+        this.set("date", "Date is: " + result.day + "-" + result.month + "-" + result.year);
+      })
+      .catch((error) => {
+        console.log("Error: " + error);
+      })
+ }
+
+ // Pick Time
+ exports.selectTime = function() {
+    this.materialDatetimepicker.pickTime()
+      .then((result) => {
+        this.set("time", "Time is: " + result.hour + ":" + result.minute);
+      })
+      .catch((error) => {
+        console.log("Error: " + error);
+      })
+ }
+
+```
 
 ## API
 
-Describe your plugin methods and properties here. See [nativescript-feedback](https://github.com/EddyVerbruggen/nativescript-feedback) for example.
-    
-| Property | Default | Description |
-| --- | --- | --- |
-| some property | property default value | property description, default values, etc.. |
-| another property | property default value | property description, default values, etc.. |
+`pickDate(): Promise<{}>;`
+
+Returns a promise that resolves to date object
+date: {
+    day: number,
+    month: number,
+    year: number
+}
+
+`pickTime(is24HourView?): Promise<{}>;`
+
+Returns a promise that resolves to time object
+time: {
+    hour: number,
+    minute: number
+}
+
+Passing `true` to this API, shows a 24hr View timepicker.
     
 ## License
 

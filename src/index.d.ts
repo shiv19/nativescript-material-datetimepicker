@@ -1,4 +1,5 @@
 export declare class MaterialDatetimepicker {
   constructor();
-  show(): Promise<{}>;
+  pickDate(): Promise<{}>;
+  pickTime(): Promise<{}>;
 }

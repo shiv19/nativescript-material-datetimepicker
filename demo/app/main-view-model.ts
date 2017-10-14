@@ -2,7 +2,8 @@ import { Observable } from 'tns-core-modules/data/observable';
 import { MaterialDatetimepicker } from 'nativescript-material-datetimepicker';
 
 export class HelloWorldModel extends Observable {
-  public message: string;
+  public date: string;
+  public time: string;
   private materialDatetimepicker: MaterialDatetimepicker;
 
   constructor() {
@@ -11,9 +12,19 @@ export class HelloWorldModel extends Observable {
   }
 
   selectDate = function() {
-    this.materialDatetimepicker.show()
+    this.materialDatetimepicker.pickDate()
       .then((result) => {
-        this.set("message", "Date is: " + result);
+        this.set("date", "Date is: " + result.day + "-" + result.month + "-" + result.year);
+      })
+      .catch((error) => {
+        console.log("Error: " + error);
+      })
+  }
+
+  selectTime = function() {
+    this.materialDatetimepicker.pickTime()
+      .then((result) => {
+        this.set("time", "Time is: " + result.hour + ":" + result.minute);
       })
       .catch((error) => {
         console.log("Error: " + error);
