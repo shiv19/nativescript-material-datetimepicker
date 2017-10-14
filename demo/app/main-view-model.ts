@@ -7,8 +7,16 @@ export class HelloWorldModel extends Observable {
 
   constructor() {
     super();
-
     this.materialDatetimepicker = new MaterialDatetimepicker();
-    this.message = this.materialDatetimepicker.message;
+  }
+
+  selectDate = function() {
+    this.materialDatetimepicker.show()
+      .then((result) => {
+        this.set("message", "Date is: " + result);
+      })
+      .catch((error) => {
+        console.log("Error: " + error);
+      })
   }
 }
