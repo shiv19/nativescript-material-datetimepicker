@@ -1,6 +1,6 @@
 {
     "name": "nativescript-material-datetimepicker",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "NativeScript Plugin to use Material Design Date and Time Picker",
     "main": "material-datetimepicker",
     "typings": "index.d.ts",
