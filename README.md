@@ -42,7 +42,7 @@ exports.selectDate = function() {
 exports.selectTime = function() {
     mDtpicker.pickTime()
         .then((result) => {
-            console.log("time", "Time is: " + result.hour + ":" + result.minute);
+            console.log("Time is: " + result.hour + ":" + result.minute);
         })
         .catch((error) => {
             console.log("Error: " + error);
@@ -56,20 +56,23 @@ exports.selectTime = function() {
 `pickDate(): Promise<{}>;`
 
 Returns a promise that resolves to date object
+```js
 date: {
     day: number,
     month: number,
     year: number
 }
+```
 
 `pickTime(is24HourView?): Promise<{}>;`
 
 Returns a promise that resolves to time object
+```js
 time: {
     hour: number,
     minute: number
 }
-
+```
 Passing `true` to this API, shows a 24hr View timepicker.
     
 ## License
