@@ -5,8 +5,11 @@ It is not compatible with iOS yet.
 
 ## Screenshots
 
-![Date Picker](https://github.com/shiv19/nativescript-material-datetimepicker/blob/master/assets/datepicker.jpeg?raw=true)
-![Time Picker](https://github.com/shiv19/nativescript-material-datetimepicker/blob/master/assets/timepicker.jpeg?raw=true)
+### Date Picker
+<img src="https://github.com/shiv19/nativescript-material-datetimepicker/blob/master/assets/datepicker.jpeg?raw=true" height="320" > 
+
+### Time Picker
+<img src="https://github.com/shiv19/nativescript-material-datetimepicker/blob/master/assets/timepicker.jpeg?raw=true" height="320" > 
 
 ## Installation
 
