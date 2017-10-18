@@ -18,8 +18,8 @@ export class HelloWorldModel extends Observable {
       })
       .catch((error) => {
         console.log("Error: " + error);
-      })
-  }
+      });
+  };
 
   selectTime = function() {
     this.materialDatetimepicker.pickTime()
@@ -28,6 +28,6 @@ export class HelloWorldModel extends Observable {
       })
       .catch((error) => {
         console.log("Error: " + error);
-      })
-  }
+      });
+  };
 }
