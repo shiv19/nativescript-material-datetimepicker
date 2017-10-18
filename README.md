@@ -1,4 +1,4 @@
-# nativescript-material-datetimepicker [![Build Status](https://travis-ci.org/shiv19/nativescript-material-datetimepicker.svg?branch=master)](https://travis-ci.org/shiv19/nativescript-material-datetimepicker) [![npm](https://img.shields.io/npm/dt/express.svg)](https://www.npmjs.com/package/nativescript-material-datetimepicker)
+# nativescript-material-datetimepicker [![Build Status](https://travis-ci.org/shiv19/nativescript-material-datetimepicker.svg?branch=master)](https://travis-ci.org/shiv19/nativescript-material-datetimepicker) [![npm](https://img.shields.io/npm/dt/express.svg)](https://www.npmjs.com/package/nativescript-material-datetimepicker) [![npm](https://img.shields.io/npm/v/npm.svg)](https://www.npmjs.com/package/nativescript-material-datetimepicker)
 
 This plugin is a wrapper around `android.app.DatePickerDialog` for Android.
 It is not compatible with iOS yet.
