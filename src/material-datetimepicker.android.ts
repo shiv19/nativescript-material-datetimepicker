@@ -17,7 +17,7 @@ export class MaterialDatetimepicker {
                         "day": dayOfMonth,
                         "month": (++monthOfYear),
                         "year": year
-                      }
+                      };
                       resolve(date);
                   }
               }), now.get(Calendar.YEAR),
@@ -41,7 +41,7 @@ export class MaterialDatetimepicker {
                       const time = {
                         "hour": hourOfDay,
                         "minute": minute
-                      }
+                      };
                       resolve(time);
                   }
               }), now.get(Calendar.HOUR_OF_DAY),
