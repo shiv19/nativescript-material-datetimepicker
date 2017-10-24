@@ -10,7 +10,7 @@ This plugin is a wrapper around `android.app.DatePickerDialog` for Android.
 
 ---
 
-## DEPRECATED - 25th Oct 2017
+## DEPRECATED - 25th Oct 2017 
 
 All functionality of this plugin, and more (including iOS Support), is now 
 available at [nativescript-modal-datetimepicker](https://www.npmjs.com/package/nativescript-modal-datetimepicker) <3
