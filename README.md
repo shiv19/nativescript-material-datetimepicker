@@ -6,12 +6,11 @@
 [![NPM](https://nodei.co/npm/nativescript-material-datetimepicker.png)](https://nodei.co/npm/nativescript-material-datetimepicker/)
 
 This plugin is a wrapper around `android.app.DatePickerDialog` for Android.
-It is not compatible with iOS yet.
 
 
 ---
 
-## DEPRECATED
+## DEPRECATED - 25th Oct 2017
 
 All functionality of this plugin, and more (including iOS Support), is now 
 available at [nativescript-modal-datetimepicker](https://www.npmjs.com/package/nativescript-modal-datetimepicker) <3
